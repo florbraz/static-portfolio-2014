@@ -12,35 +12,115 @@
 	
 	<link rel="shortcut icon" href="img/favicon.png" />
 
-	<link rel="stylesheet" type="text/css" href="css/main.css" /> <!-- versão compilada dos arquivos sass separados por área e função -->
-	<link rel="stylesheet" type="text/css" media="(min-width:940px)" href="css/screen-min-1024.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> <!-- versão compilada dos arquivos sass separados por área e função -->
 	
 	
 	<script type="text/javascript" src="js/modernizr.js"></script> <!-- ajudante na detecção de features não suportadas por cada browser -->
 	
-	 <!-- ativa elementos html5 para IEs antigos.  -->
-	<!--[if IE]>
-		<script type="text/javascript" src="js/html5.js"></script>
-	<![endif]-->
-	
-	<!-- ativa media queries para IEs antigos -->
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="css/ies.css"/>
-		<script type="text/javascript" src="js/respond.js"></script> 
-	<![endif]-->
 </head>
 
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.png" width="103" />
+				</a>
+			</div>
 
-<main class="content" role="main">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				
+
+				<form class="navbar-form navbar-right" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control pull-right" style="width: 300px; margin-right: 35px, border: 1px solid black; background-color: #e5e5e5;" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="reset" class="btn btn-default">
+								<span class="glyphicon glyphicon-remove">
+									<span class="sr-only">Close</span>
+								</span>
+							</button>
+							<button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only">Search</span>
+								</span>
+							</button>
+						</span>
+					</div>
+				</form>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</div>
+<main role="main">
+<div class="container-fluid">
 	<div class="row">
 		<div class="banner">
 			<img src="img/banner-clover.jpg" />
 		</div>
 	</div>
-</main>
-
 	
-<script type="text/javascript" src="js/global.js"></script> <!-- versão compilada dos arquivos js separados por área e função -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+			      <img data-src="holder.js/300x300" alt="...">
+			      <div class="caption">
+			        <h3>Thumbnail label</h3>
+			        <p>...</p>
+			        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+			      </div>
+			    </div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+			      <img data-src="holder.js/300x300" alt="...">
+			      <div class="caption">
+			        <h3>Thumbnail label</h3>
+			        <p>...</p>
+			        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+			      </div>
+			    </div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+			      <img data-src="holder.js/300x300" alt="...">
+			      <div class="caption">
+			        <h3>Thumbnail label</h3>
+			        <p>...</p>
+			        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+			      </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
 </body>
 </html>
