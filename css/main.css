@@ -479,19 +479,7 @@ a.btn {
   display: inline-block;
   position: relative;
 }
-/* line 37, ../sass/main.scss */
-.banner img:after {
-  background: url(../img/noise2.gif);
-  background-size: 200px auto;
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  opacity: 3;
-}
-/* line 49, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 .banner:before {
   background: url(../img/banner-clover-left.png);
   content: "";
@@ -501,7 +489,7 @@ a.btn {
   top: 0;
   height: 100%;
 }
-/* line 58, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .banner:after {
   background: url(../img/noise2.gif);
   background-size: 200px auto;
@@ -512,6 +500,7 @@ a.btn {
   top: 0;
   height: 100%;
   opacity: 0.13;
+  box-shadow: inset 0 0 150px black;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -34,17 +34,6 @@
 	img {
 		display:inline-block;
 		position:relative;
-		&:after {
-			background:url(../img/noise2.gif);
-			background-size:200px auto;
-			content:"";
-			width:100%;
-			position:absolute;
-			left:0;
-			top:0;
-			height:100%;
-			opacity:3;
-		}
 	}
 	&:before {
 		background:url(../img/banner-clover-left.png);
@@ -65,5 +54,6 @@
 		top:0;
 		height:100%;
 		opacity:0.13;
+		box-shadow:inset 0 0 150px rgba(0,0,0,1);
 	}
 }
