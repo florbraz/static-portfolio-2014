@@ -1,0 +1,69 @@
+/**
+* Sass CSS
+*
+* @site     **Site Name**
+* @author   Itelios Brasil
+*
+*/
+
+// Helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// Base
+@import "base/reset";
+@import "base/font-face";
+
+// Layouts
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+
+// Components
+@import "components/buttons";
+@import "components/breadcrumb";
+@import "components/inputs";
+@import "components/slideshow";
+@import "components/accordion";
+@import "components/social-network";
+
+.banner {
+	background:url(../img/banner-clover-right.png);
+	text-align:center;
+	position:relative;
+	img {
+		display:inline-block;
+		position:relative;
+		&:after {
+			background:url(../img/noise2.gif);
+			background-size:200px auto;
+			content:"";
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0;
+			height:100%;
+			opacity:3;
+		}
+	}
+	&:before {
+		background:url(../img/banner-clover-left.png);
+		content:"";
+		width:50%;
+		position:absolute;
+		left:0;
+		top:0;
+		height:100%;
+	}
+	&:after {
+		background:url(../img/noise2.gif);
+		background-size:200px auto;
+		content:"";
+		width:100%;
+		position:absolute;
+		left:0;
+		top:0;
+		height:100%;
+		opacity:0.13;
+	}
+}

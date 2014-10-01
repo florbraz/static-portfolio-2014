@@ -1,0 +1,16 @@
+// colors
+$brand-color: #ff6600;
+$brand-color-secondary: #009999; // if none, repeat the $brand-color value
+$default-link-color: darken(#ff6600, 0.1);
+$default-text-color: #454545;
+$default-input-color: #454545;
+
+// fonts
+$fnormalname: "Fs Truman Regular";
+$fnormal: $fnormalname, Helvetica, Sans-Serif;
+$fboldname: "Fs Truman Regular";
+$fbold: $fboldname, Helvetica, Sans-Serif;
+
+// spacing
+$paragraph-spacing: 0.7em;
+$padding: 3em;

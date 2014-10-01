@@ -1,0 +1,517 @@
+/**
+* Sass CSS
+*
+* @site     **Site Name**
+* @author   Itelios Brasil
+*
+*/
+/* line 1, ../sass/base/_reset.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+a {
+  background: 0 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+img {
+  border: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+button {
+  overflow: visible;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+input {
+  line-height: normal;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+optgroup {
+  font-weight: 700;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+td, th {
+  padding: 0;
+}
+
+/* line 3, ../sass/base/_reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 11, ../sass/base/_reset.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #454545;
+  font-family: "Fs Truman Regular", Helvetica, Sans-Serif;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+/* line 21, ../sass/base/_reset.scss */
+input[type="password"] {
+  font-family: "Fs Truman Regular", Helvetica, Sans-Serif;
+  text-transform: none;
+}
+
+/* line 26, ../sass/base/_reset.scss */
+input[type="text"],
+input[type="password"],
+input[type="button"],
+input[type="submit"],
+select,
+textarea,
+button {
+  border-radius: 0;
+}
+
+/* line 36, ../sass/base/_reset.scss */
+input[type="text"],
+input[type="password"],
+textarea {
+  box-shadow: 0 0 0 #fff;
+  -webkit-appearance: none;
+}
+
+/* line 43, ../sass/base/_reset.scss */
+body {
+  font-size: 10px;
+  line-height: 1.4;
+  min-width: 320px;
+  animation: show 1s;
+  -webkit-animation: show 1s;
+  -moz-animation: show 1s;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 50, ../sass/base/_reset.scss */
+::-moz-selection {
+  background: #ff6600;
+  text-shadow: none;
+  color: #fff;
+}
+
+/* line 55, ../sass/base/_reset.scss */
+::selection {
+  background: #ff6600;
+  text-shadow: none;
+  color: #fff;
+}
+
+/* line 61, ../sass/base/_reset.scss */
+::-webkit-selection {
+  background: #ff6600;
+  text-shadow: none;
+  color: #fff;
+}
+
+/* line 67, ../sass/base/_reset.scss */
+p {
+  margin: 0 0 0.7em 0;
+}
+
+/* line 71, ../sass/base/_reset.scss */
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fe6600;
+}
+/* line 75, ../sass/base/_reset.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 80, ../sass/base/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0 0 0.7em;
+  padding: 0;
+}
+
+/* line 90, ../sass/base/_reset.scss */
+img {
+  vertical-align: middle;
+  display: block;
+}
+
+/* line 95, ../sass/base/_reset.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 101, ../sass/base/_reset.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 105, ../sass/base/_reset.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 114, ../sass/base/_reset.scss */
+iframe body {
+  min-width: initial;
+}
+
+@font-face {
+  font-family: "Fs Truman Regular";
+  src: url("../fonts/fs_truman-bold-webfont.eot");
+  src: url("../fonts/fs_truman-bold-webfont.svg#fs_trumanbold") format("svg"), url("../fonts/fs_truman-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fs_truman-bold-webfont.woff") format("woff"), url("../fonts/fs_truman-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fs Truman Regular";
+  src: url("../fonts/fs_truman-regular-webfont.eot");
+  src: url("../fonts/fs_truman-regular-webfont.svg#fs_trumanregular") format("svg"), url("../fonts/fs_truman-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fs_truman-regular-webfont.woff") format("woff"), url("../fonts/fs_truman-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 23, ../sass/base/_font-face.scss */
+strong {
+  font-family: "Fs Truman Regular", Helvetica, Sans-Serif;
+  font-weight: normal;
+}
+
+/* line 29, ../sass/base/_font-face.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: "Fs Truman Regular", Helvetica, Sans-Serif;
+}
+
+/* line 1, ../sass/components/_buttons.scss */
+.btn {
+  background: #ff6600;
+  border: 1px solid #ff6600;
+  font-family: "Fs Truman Regular", Helvetica, Sans-Serif;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 40px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 12, ../sass/components/_buttons.scss */
+.btn:hover {
+  background: #454545;
+  border-color: #454545;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+
+/* line 21, ../sass/components/_buttons.scss */
+a.btn {
+  display: inline-block;
+}
+
+/* line 25, ../sass/components/_buttons.scss */
+.btn-full {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 31, ../sass/components/_buttons.scss */
+.btn-secondary {
+  color: #ff6600;
+  border: 1px solid #ff6600;
+  background: transparent;
+}
+/* line 35, ../sass/components/_buttons.scss */
+.btn-secondary:hover {
+  background: #ff6600;
+  border-color: #ff6600;
+  color: #ffffff;
+}
+
+/* line 42, ../sass/components/_buttons.scss */
+.btn-disabled,
+.btn[disabled] {
+  background: #f5f5f5;
+  color: #797979;
+  border-color: #f5f5f5;
+}
+
+/* line 30, ../sass/main.scss */
+.banner {
+  background: url(../img/banner-clover-right.png);
+  text-align: center;
+  position: relative;
+}
+/* line 34, ../sass/main.scss */
+.banner img {
+  display: inline-block;
+  position: relative;
+}
+/* line 37, ../sass/main.scss */
+.banner img:after {
+  background: url(../img/noise2.gif);
+  background-size: 200px auto;
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 3;
+}
+/* line 49, ../sass/main.scss */
+.banner:before {
+  background: url(../img/banner-clover-left.png);
+  content: "";
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+/* line 58, ../sass/main.scss */
+.banner:after {
+  background: url(../img/noise2.gif);
+  background-size: 200px auto;
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.13;
+}
+
+/*# sourceMappingURL=main.css.map */

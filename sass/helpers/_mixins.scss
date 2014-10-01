@@ -1,0 +1,92 @@
+// CSS animations - transitions */
+ 
+@mixin transition ($time: 0.2s){
+    -webkit-transition: all $time ease-out;
+    -moz-transition: all $time ease-out;
+    -ms-transition: all $time ease-out;
+    -o-transition: all $time ease-out;
+    transition: all $time ease-out;
+}
+
+// animate opacity 
+@mixin opacityShow($seconds) {
+    @keyframes show
+    {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    @-webkit-keyframes show 
+    {
+       from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    animation:show $seconds;
+    -webkit-animation:show $seconds;
+    -moz-animation: show $seconds;
+}
+
+// style placeholders
+
+@mixin placeholderStyle($font-size, $font-family){
+    ::-webkit-input-placeholder{
+        color:$default-input-color;
+        font-size:$font-size;
+        font-family:$font-family;
+    }
+    :-moz-placeholder{
+        color:$default-input-color;
+        font-size:$font-size;  
+        font-family:$font-family;                    
+    }
+    ::-moz-placeholder{
+        color:$default-input-color;
+        font-size:$font-size;    
+        font-family:$font-family;                   
+    }
+    :-ms-input-placeholder{
+        color:$default-input-color;
+        font-size:$font-size;    
+        font-family:$font-family;                     
+    }
+}
+
+// triangle arrows 
+@mixin triangle($direction, $color, $size) {
+    @if $direction == "right" {
+        border-color:transparent transparent transparent $color;
+        left:auto;
+        bottom:auto;
+        top:50%;
+        margin:(-$size) 0 0 0;
+        right:-($size*2);
+    } @else if $direction == "left" {
+        border-color:transparent $color transparent transparent;
+        right:auto;
+        bottom:auto;
+        top:50%;
+        margin:(-$size) 0 0 0;
+        left:-($size*2);
+    } @else if $direction == "top" {
+        border-color:transparent transparent $color transparent;
+        right:auto;
+        bottom:auto;
+        left:50%;
+        margin:0 0 0 (-$size);
+        top:-($size*2);
+    } @else if $direction == "bottom" {
+        border-color:$color transparent transparent transparent;
+        right:auto;
+        top:auto;
+        left:50%;
+        margin:0 0 0 (-$size);
+        bottom:-($size*2);
+    } 
+    border-width:$size;
+    border-style: solid;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    z-index:20;
+}
