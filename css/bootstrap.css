@@ -6330,6 +6330,10 @@ body {
   font-family: 'enzo light';
 }
 
+h1 {
+  font-weight: normal;
+}
+
 strong,
 h2,
 h3,
@@ -6418,4 +6422,35 @@ h1 {
   border-radius: 28px;
   width: 55px;
   height: 55px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+color: #fff;
+background-color: #000;
+border-color: #000;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media screen and (max-width:767px) {
+  h1 {
+    font-size:25px;
+  }
+  .banner:after {
+    background:#666;
+  }
+  .banner img {
+    max-width: 755px;
+    margin-left: -59px;
+  }
+  h1 small {
+    display: block;
+    margin-top: 1em;
+  }
+  h1 small small {
+    display:none;
+  }
+
 }
