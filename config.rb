@@ -1,9 +1,11 @@
 # Require any additional compass plugins here.
 
+
 # Set this to the root of your project when deployed:
 http_path = ""
 css_dir = "css"
 sass_dir = "sass"
+fonts_dir = "fonts"
 images_dir = "img"
 javascripts_dir = "js"
 project_path = File.expand_path('.')
