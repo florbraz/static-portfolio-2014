@@ -78,7 +78,7 @@ $brand-primary:         #000;
 //** Load fonts from this directory.
 
 // [converter] Asset helpers such as Sprockets and Node.js Mincer do not resolve relative paths
-$icon-font-path: "../fonts/bootstrap/";
+$icon-font-path: "/bootstrap/";
 
 //** File name for all font files.
 // $icon-font-name:          "glyphicons-halflings-regular"
