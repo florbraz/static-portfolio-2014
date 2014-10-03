@@ -15,7 +15,6 @@ select,
 textarea {
     color:$default-text-color;
     font-family:$fnormal;
-    text-transform: uppercase;
     border-radius:0;
 } 
 input[type="password"] {
@@ -41,7 +40,7 @@ textarea {
 }
 
 body {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.4;
     min-width:320px;
     @include opacityShow(1s);    
