@@ -1,0 +1,11 @@
+/* line 1, ../../sass/pages/soon.scss */
+html {
+  background: url(../../img/bg-soon.png) no-repeat left bottom;
+  min-height: 100%;
+}
+/* line 4, ../../sass/pages/soon.scss */
+html body {
+  background: transparent;
+}
+
+/*# sourceMappingURL=soon.css.map */

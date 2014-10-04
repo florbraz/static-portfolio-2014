@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,IAAK;EACJ,UAAU,EAAC,gDAAgD;EAC3D,UAAU,EAAE,IAAI;;;AAChB,SAAK;EACL,UAAU,EAAC,WAAW",
+"sources": ["../../sass/pages/soon.scss"],
+"names": [],
+"file": "soon.css"
+}
