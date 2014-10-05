@@ -1,7 +1,31 @@
+@import "../helpers/variables";
+
 html {
 	background:url(../../img/bg-soon.png) no-repeat left bottom;
 	min-height: 100%;
 	body {
-	background:transparent
+		background:transparent
+	}
+}
+
+.text-center {
+	
+}
+
+.logo {
+	display:block;
+	margin:40px 0;
+} 
+
+.thin {
+	font-weight:normal;
+	font-family:$flight;
+	margin-top:40px;
+	margin-bottom:25px;
+}
+
+@media screen and (max-width:767px) {
+	.me img {
+		max-width:200px;
 	}
 }

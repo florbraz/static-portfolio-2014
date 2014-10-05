@@ -1,8 +1,8 @@
 /**
 * Sass CSS
 *
-* @site     **Site Name**
-* @author   Itelios Brasil
+* @site     Portfolio | Flor Braz - Front End Developer and UI Designer
+* @author   Flor Braz
 *
 */
 
@@ -10,15 +10,13 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
-@import "bootstrap-compass";
-@import "bootstrap-variables";
 @import "bootstrap";
 
-// Base
+// Base 
 @import "base/typography"; 
 
 // Layouts
-@import "layout/header";
+@import "layout/header"; 
 @import "layout/footer"; 
 
 // Components

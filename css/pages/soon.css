@@ -1,11 +1,27 @@
-/* line 1, ../../sass/pages/soon.scss */
 html {
   background: url(../../img/bg-soon.png) no-repeat left bottom;
   min-height: 100%;
 }
-/* line 4, ../../sass/pages/soon.scss */
 html body {
   background: transparent;
+}
+
+.logo {
+  display: block;
+  margin: 40px 0;
+}
+
+.thin {
+  font-weight: normal;
+  font-family: "enzo light", Helvetica, Sans-Serif;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .me img {
+    max-width: 200px;
+  }
 }
 
 /*# sourceMappingURL=soon.css.map */
