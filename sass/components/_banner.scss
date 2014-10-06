@@ -1,0 +1,66 @@
+h1 small {
+	color:$brand-color;
+	small {
+		color:$light-text-color;
+	}
+}
+
+.banner {
+	background:url(../img/banner-clover-right.png);
+	text-align:center;
+	position:relative;
+	img {
+		display:inline-block;
+		position:relative;
+	}
+	&:before,
+	&:after {
+		position:absolute;
+		left:0;
+		top:0;
+		height:100%;
+	}
+	&:before {
+		background:url(../img/banner-clover-left.png);
+		content:"";
+		width:50%;
+	}
+	&:after {
+		background: url(../img/noise2.gif), url(../img/noise.gif);
+  		background-size: 160px auto, auto auto;
+		content: "";
+		width: 100%;
+		opacity: 0.2;
+		box-shadow: inset 0 0 150px black;
+		background-blend-mode:multiply;
+	}
+}
+
+.contained-inside-image,
+.contained-inside-image + div {
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.contained-inside-image {
+  width: 100%;
+  margin-right: -0.277em;
+  position: relative;
+  z-index: 10;
+  padding:30px;
+  text-align:center;
+}
+
+.contained-inside-image + div {
+  width: 100%;
+  margin-left: -100%;
+  overflow: hidden;
+}
+
+.page-header {
+  display: inline-block;
+  margin:0 auto;
+  background: #fff;
+  background: rgba(255,255,255,0.9);
+  padding:30px;
+}

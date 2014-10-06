@@ -33,11 +33,13 @@
 }
 
 body {
-  font-family: 'enzo light';
+  font-family: 'enzo medium';
+  color:$brand-color;
 }
 
 h1 {
   font-weight: normal;
+  font-family:'enzo light';
 }
 
 strong,
@@ -52,4 +54,16 @@ h6 {
 
 h1 {
   font-size:40px;
+  small small {
+  	font-family:'enzo medium';
+  }
+}
+
+h2 {
+	font-size:24px
+}
+
+h3 {
+	font-size:18px;
+	margin-bottom: 16px;
 }
