@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" ng-app="portfolioApp">
 <head>
 	<title>Portfolio | Flor Braz - Front End Developer and UI Designer </title>
 	
@@ -40,6 +40,8 @@
 	
 	
 	<script type="text/javascript" src="js/modernizr.js"></script> <!-- ajudante na detecção de features não suportadas por cada browser -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="js/controllers.js"></script>
 	
 </head>
 
@@ -118,7 +120,23 @@
 			<img src="img/banner-clover.jpg" />
 		</div>
 	</div>
-	
+	<div class="container works" ng-controller="WorksCtrlr">
+	<h2 class="section-title"><span>Latest Work</span></h2>
+		<h3 class="section-small">(*some of those works were made under a confidentiality agreement, so I can’t reveal the identity of the clients involved)</h3>
+		<div class="row">
+			<div class="col-sm-4" ng-repeat="work in works">
+				<div class="thumbnail">
+			      <div class="thumb-bg"><span class="thumb-inner"><img src="http://florbraz.com/drupal/file/3" width="110" alt="..."></span></div>
+			      <div class="caption">
+			        <h3>{{work.list}}</h3>
+			        <p><strong>What I did:</strong> {{work.field_what_i_did.value}}</p>
+			        <p><strong>Based in:</strong> {{work.field_based_in.value}}</p>
+			        <p><strong>Support:</strong> {{work.field_support.value}}</p>
+			      </div>
+			    </div>
+			</div>
+		</div>
+	</div>
 	<div class="container works">
 		<h2 class="section-title"><span>Latest Work</span></h2>
 		<h3 class="section-small">(*some of those works were made under a confidentiality agreement, so I can’t reveal the identity of the clients involved)</h3>
