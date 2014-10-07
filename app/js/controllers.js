@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-var portfolioApp = angular.module('portfolioApp', []);
+var portfolioApp = angular.module('portfolioApp', ['ngSanitize']);
 
 portfolioApp.controller('WorksCtrlr', function($scope, $http) {
 	if (window.location.origin == "florbraz.com") {

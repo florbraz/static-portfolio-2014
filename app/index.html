@@ -41,6 +41,7 @@
 	
 	<script type="text/javascript" src="js/modernizr.js"></script> <!-- ajudante na detecção de features não suportadas por cada browser -->
 	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular/angular-sanitize.min.js"></script>
 	<script src="js/controllers.js"></script>
 	
 </head>
@@ -128,10 +129,13 @@
 				<div class="thumbnail">
 			      <div class="thumb-bg"><span class="thumb-inner"><img src="img/logo-confidential.png" ng-src="{{work.field_image.url}}" width="190" alt="..."></span></div>
 			      <div class="caption">
-			        <h3>{{work.list}}</h3>
-			        <p><strong>What I did:</strong> {{work.field_what_i_did.value}}</p>
-			        <p><strong>Based in:</strong> {{work.field_based_in.value}}</p>
-			        <p><strong>Support:</strong> {{work.field_support.value}}</p>
+			        <h3>{{work.title}}</h3>
+			        <p><strong>What I did:</strong></p>
+			        <div ng-bind-html="work.field_what_i_did.value"></div>
+			        <p><strong>Based in:</strong></p>
+			        <div ng-bind-html="work.field_based_in.value"></div>
+			        <p><strong>Support:</strong> </p>
+			        <div ng-bind-html="work.field_support.value"></div>
 			      </div>
 			    </div>
 			</div>
