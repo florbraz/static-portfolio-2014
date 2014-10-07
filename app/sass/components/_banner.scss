@@ -26,13 +26,7 @@ h1 small {
 		width:50%;
 	}
 	&:after {
-		background: url(../img/noise2.gif), url(../img/noise.gif);
-  		background-size: 160px auto, auto auto;
-		content: "";
-		width: 100%;
-		opacity: 0.2;
-		box-shadow: inset 0 0 150px black;
-		background-blend-mode:multiply;
+		@include noise();
 	}
 }
 
