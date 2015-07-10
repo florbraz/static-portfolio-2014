@@ -19,7 +19,7 @@
       "account_name": "root",
       "account_pass": "root",
       "account_mail": "box@example.com",
-      "site_name": "DrupalHub",
+      "site_name": "FlorBraz's Portfolio",
       "site_mail": "box@example.com"
     }
   },
@@ -39,7 +39,7 @@
     "itelios"
   ],
   "apache":{
-    "site":"drupalhub.dev",
+    "site":"portfolio.dev",
     "default_modules":[
     ]	
   }

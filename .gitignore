@@ -21,3 +21,4 @@ tmp
 .DS_Store
 .idea
 .sass-cache
+phpinfo.php
