@@ -1,0 +1,46 @@
+{
+  "ip": "192.168.33.42",
+  "memory": "2048",
+  "synced_folder": {
+    "host_path": "../",
+    "guest_path": "/var/www"
+  },
+  "php": {
+    "version": false
+  },
+  "mysql": {
+    "server_root_password": "root",
+	"databases": {
+      "name": "dev_commerce"
+    }
+  },  
+  "sites": {
+    "drupal7": {
+      "account_name": "root",
+      "account_pass": "root",
+      "account_mail": "box@example.com",
+      "site_name": "DrupalHub",
+      "site_mail": "box@example.com"
+    }
+  },
+  "git": {
+    "user": {
+      "name": "Flor Braz",
+      "email": "eu@florbraz.com"
+    },
+    "core": {
+      "editor": "vi"
+    },
+    "color": {
+      "ui": true
+    }
+  },
+  "custom_roles": [
+    "itelios"
+  ],
+  "apache":{
+    "site":"drupalhub.dev",
+    "default_modules":[
+    ]	
+  }
+}

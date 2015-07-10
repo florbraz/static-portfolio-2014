@@ -1,0 +1,12 @@
+{
+  "name": "itelios",
+  "env_run_lists": {},
+  "default_attributes": {},
+  "override_attributes": {},
+  "json_class": "Chef::Role",
+  "description": "Role for Itelios Chef",
+  "run_list": [
+    "recipe[itelios::databases]"
+  ],
+  "chef_type": "role"
+}

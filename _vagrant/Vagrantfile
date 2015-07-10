@@ -1,0 +1,54 @@
+Vagrant.configure("2") do |config|
+
+  # Load config JSON
+  vdd_config_path = File.expand_path(File.dirname(__FILE__)) + "/config.json"
+  vdd_config = JSON.parse(File.read(vdd_config_path))
+
+  # Base box
+  config.vm.box = "precise32"
+  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+
+  # Networking
+  config.vm.network :private_network, ip: vdd_config["ip"]
+  #config.vm.network :public_network
+  config.vm.network :forwarded_port, guest: 80, host: 88 #apache
+  #config.vm.network :forwarded_port, guest: 3306, host: 3306 #mysql
+
+
+  # Customize provider
+  config.vm.provider :virtualbox do |vb|
+    # RAM
+    vb.customize ["modifyvm", :id, "--memory", vdd_config["memory"]]
+
+    # Synced Folder
+   #config.vm.synced_folder vdd_config["synced_folder"]["host_path"],
+   # config.vm.synced_folder vdd_config["synced_folder"]["host_path"],
+    #  vdd_config["synced_folder"]["guest_path"],
+    #  type: "rsync"
+  #end
+config.vm.synced_folder vdd_config["synced_folder"]["host_path"],
+	vdd_config["synced_folder"]["guest_path"]
+end
+  # Customize provisioner
+  config.omnibus.chef_version = '10.14.2'
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = [
+      "cookbooks/site",
+      "cookbooks/core",
+      "cookbooks/custom"
+    ]
+    chef.roles_path = "roles"
+
+    # Prepare chef JSON
+    chef.json = vdd_config
+
+    # Add VDD role
+    chef.add_role "vdd"
+
+    # Add custom roles
+    vdd_config["custom_roles"].each do |role|
+      chef.add_role role
+    end
+  end
+
+end

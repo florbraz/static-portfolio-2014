@@ -1,3 +1,18 @@
+# Ignore configuration files that may contain sensitive information.
+_drupal/sites/*/*settings*.php
+
+# Ignore paths that contain user-generated content.
+_drupal/sites/*/files
+_drupal/sites/*/private
+
+# Ignore system files
+.DS_Store
+
+# Ignore Vagrant provision files
+_vagrant/.vagrant
+	
+#etc.
+
 logs/*
 !.gitkeep
 node_modules/
